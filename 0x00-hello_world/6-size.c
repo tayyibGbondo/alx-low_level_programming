@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - the size of the datatypes
- * ny tayyib gbondo
- * Result: 0
+ * by tayyib gbondo
+ * Return:0
 */
 int main(void)
 {
