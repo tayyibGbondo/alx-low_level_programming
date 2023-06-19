@@ -1,19 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "main.h"
 /**
- * main - entry point
- * Description: multiply 2 nums and give result
- * @argc: arguement count
- * @argv: arguement array
- * Return: 0
+ * main - prints the product of two numbers
+ * @argc: argument count
+ * @argv: array of arguments
+ * Return: 0 Always
  */
-
 int main(int argc, char *argv[])
 {
-	int num1;
-	int num2;
-	int result;
+	int x, y, result = 0;
 
 	if (argc != 3)
 	{
@@ -21,9 +15,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+
+	result = x * y;
+
 	printf("%d\n", result);
+
 	return (0);
 }

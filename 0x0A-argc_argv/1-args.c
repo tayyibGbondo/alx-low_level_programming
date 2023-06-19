@@ -1,15 +1,14 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - entry point
- * Description: prints number of command line arguements
- * @argc: number of arguements
- * @argv: array of arguemnts
- * Return: 0
+ * main - prints number of arguments passed
+ * @argc: number of arguments
+ * @argv: command value
+ * Return: 0 Always
  */
-
-int main(int argc, char *argv[]__attribute__((unused)))
+int main(int argc, char *argv[])
 {
+	(void)argv;
+
 	printf("%d\n", argc - 1);
 	return (0);
 }
